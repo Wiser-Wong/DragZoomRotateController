@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wiser.dragzoomrotatelayout.DragZoomRotateController
+        android:id="@+id/dzr_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/zoom_bg"
+        app:dzr_isLimitSpringAnim="true"
+        app:dzr_isRotate="true"
+        app:dzr_isDrag="true"
+        app:dzr_isScale="true"
+        app:dzr_isDoubleScale="true"
+        app:dzr_isDragLimit="false"
+        app:dzr_minScale="0.5"
+        app:dzr_midScale="2.5"
+        app:dzr_maxScale="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ip"/>
+
+    </com.wiser.dragzoomrotatelayout.DragZoomRotateController>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

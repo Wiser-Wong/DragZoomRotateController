@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DragZoomRotateController">
+        <attr name="dzr_isLimitSpringAnim" format="boolean"/>
+        <attr name="dzr_isDrag" format="boolean"/>
+        <attr name="dzr_isScale" format="boolean"/>
+        <attr name="dzr_isRotate" format="boolean"/>
+        <attr name="dzr_isDoubleScale" format="boolean"/>
+        <attr name="dzr_isDragLimit" format="boolean"/>
+        <attr name="dzr_minScale" format="float"/>
+        <attr name="dzr_midScale" format="float"/>
+        <attr name="dzr_maxScale" format="float"/>
+    </declare-styleable>
+</resources>
