@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <com.wiser.dragzoomrotatelayout.DragZoomRotateController
+        android:layout_margin="20dp"
         android:id="@+id/dzr_controller"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
