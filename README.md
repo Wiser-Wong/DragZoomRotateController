@@ -6,6 +6,10 @@
 
 # 使用方法
     可动态配置属性参数，或者动画参数等等
+           dzr_controller?.setInterpolator(LinearInterpolator())
+           dzr_controller?.setDurationScale(100)
+           dzr_controller?.setDurationSpring(100) 
+           等等...
     ImageView是拖拽放大缩小旋转的主角及有子View的时候操作的是子View
         <com.wiser.dragzoomrotatelayout.DragZoomRotateController
                 android:layout_margin="20dp"
@@ -57,3 +61,14 @@
                     app:layout_constraintTop_toTopOf="parent" >
             
             </com.wiser.dragzoomrotatelayout.DragZoomRotateController>
+
+# 操作指南
+* dzr_isLimitSpringAnim:是否滑出边界需要回弹动画
+* dzr_isRotate:是否可以选择
+* dzr_isDrag:是否可以拖拽
+* dzr_isScale:是否可以放大缩小
+* dzr_isDoubleScale:是否可以双击放大缩小
+* dzr_isDragLimit:是否拖拽边界限制
+* dzr_minScale:最小缩小到的比例
+* dzr_midScale:双击放大中间放大比例
+* dzr_maxScale:最大放大到的比例
